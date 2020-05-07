@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     /**
         hola controller
+        hola como esta
      */
     public function index()
     {
