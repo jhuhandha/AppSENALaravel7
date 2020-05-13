@@ -34,5 +34,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/producto/cambiar/estado/{id}/{estado}', 'ProductoController@updateState');
 
 
+    Route::get('/agenda', 'AgendaController@index');
+    Route::get('/agenda/listar', 'AgendaController@listar');
+    Route::post('/agenda/guardar', 'AgendaController@guardar');
+
+
+    Route::get('/agenda/informe', 'AgendaController@informe');
+    Route::post('/agenda/generar/informe', 'AgendaController@generar_informe');
 });
 
